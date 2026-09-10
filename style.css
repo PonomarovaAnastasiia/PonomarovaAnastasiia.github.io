@@ -1272,7 +1272,7 @@ button {
   /* фото займає весь екран */
 
   .quote-section__image {
-    object-position: 58% center;
+    object-position: 68% center;
   }
 
   /* stronger mobile overlay */
@@ -1738,7 +1738,7 @@ button {
 
   object-fit: cover;
 
-  object-position: center;
+  object-position: 0 center;
 
   transform: scale(1.025);
 }
@@ -2099,14 +2099,14 @@ button {
   }
 
   .therapy-format__image {
-    object-position: 55% center;
+    object-position: 43% center;
   }
 
   .therapy-format__overlay {
     background: linear-gradient(
       180deg,
-      rgba(12, 12, 12, 0.14) 0%,
-      rgba(12, 12, 12, 0.28) 35%,
+      rgba(12, 12, 12, 0.54) 0%,
+      rgba(12, 12, 12, 0.78) 35%,
       rgba(12, 12, 12, 0.82) 100%
     );
   }
@@ -2228,7 +2228,7 @@ button {
   height: 100%;
 
   object-fit: cover;
-  object-position: center 38%;
+  object-position: 0 38%;
 
   transform: scale(1.025);
 
@@ -2629,7 +2629,7 @@ button {
   }
 
   .contact__image {
-    object-position: 73% center;
+    object-position: 50% center;
   }
 
   .contact__overlay {
