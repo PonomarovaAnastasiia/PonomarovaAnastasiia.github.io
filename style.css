@@ -445,9 +445,10 @@ button {
     object-position: 70% 60%;
   }
   .hero-content {
-    padding: 55vh 20px 40px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   .hero-kicker {
     text-align: left;
@@ -455,7 +456,7 @@ button {
   }
   .hero-copy {
     align-self: center;
-    width: 86%;
+    width: 100%;
     transform: translateY(-3vh);
   }
   .hero-title {
@@ -1997,7 +1998,7 @@ button {
 
 @media (max-width: 760px) {
   .work {
-    padding: 60px 0 20px;
+    padding: 60px 0;
   }
   .work-intro__media {
     order: 2;
@@ -3366,5 +3367,63 @@ button {
 
   .first-session__button {
     width: 100%;
+  }
+
+  .action {
+    order: 4;
+  }
+
+  .action a {
+    margin-top: 0;
+  }
+}
+
+.action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action a {
+  min-width: 250px;
+}
+
+.work-brand {
+  min-height: 100%;
+  padding: clamp(40px, 5vw, 80px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: var(--page-ink);
+}
+
+.work-brand__name {
+  font-family: var(--serif);
+  font-size: clamp(26px, 2.5vw, 42px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.work-brand__role {
+  margin-top: 12px;
+
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  opacity: 0.55;
+}
+
+@media (max-width: 760px) {
+  .work-brand {
+    display: none;
   }
 }
