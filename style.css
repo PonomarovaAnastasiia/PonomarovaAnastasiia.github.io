@@ -2184,6 +2184,10 @@ button {
     max-width: 100%;
     text-align: center;
   }
+
+  .hero .hero-cta {
+    font-size: 14px;
+  }
 }
 
 .site-header {
